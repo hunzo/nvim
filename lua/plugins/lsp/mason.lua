@@ -57,6 +57,8 @@ return {
 				"gofumpt",
 				"golines",
 				"goimports-reviser",
+				-- "isort",
+				-- "black",
 			},
 		})
 	end,
