@@ -39,7 +39,7 @@ keymap.set("n", "<C-w><down>", "<C-w>-", opts)
 
 -- diagnostics
 keymap.set("n", "<C-d>", function()
-    vim.diagnostic.goto_next()
+  vim.diagnostic.goto_next()
 end, opts)
 
 -- lsp

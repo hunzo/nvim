@@ -3,6 +3,8 @@ return {
 	enabled = true,
 	config = function()
 		local opts = require("config.nvim-transparent")
-		require("transparent").setup(opts)
+		local transparent = require("transparent")
+		transparent.setup(opts)
+		transparent.clear_prefix("NeoTree")
 	end,
 }
