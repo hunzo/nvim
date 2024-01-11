@@ -4,11 +4,23 @@ return {
     lazy = false,
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      -- local on_attach = require("configs.lspconfig").on_attach
 
       local lspconfig = require("lspconfig")
-      -- local lsp_server = require("configs.lspconfig").lsp
-      local lsp_server = { "lua_ls" }
+      local lsp_server = {
+				"tailwindcss",
+				"tsserver",
+				"gopls",
+				"pyright",
+				"emmet_ls",
+				"html",
+				"lua_ls",
+				"yamlls",
+				"denols",
+				"dockerls",
+				"bashls",
+				"jsonls",
+				"cssls",
+      }
       for _, lsp in ipairs(lsp_server) do
         lspconfig[lsp].setup({
           capabilities = capabilities,
