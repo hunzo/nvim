@@ -7,19 +7,19 @@ return {
 
       local lspconfig = require("lspconfig")
       local lsp_server = {
-				"tailwindcss",
-				"tsserver",
-				"gopls",
-				"pyright",
-				"emmet_ls",
-				"html",
-				"lua_ls",
-				"yamlls",
-				"denols",
-				"dockerls",
-				"bashls",
-				"jsonls",
-				"cssls",
+        "tailwindcss",
+        "tsserver",
+        "gopls",
+        "pyright",
+        "emmet_ls",
+        "html",
+        "lua_ls",
+        "yamlls",
+        "denols",
+        "dockerls",
+        "bashls",
+        "jsonls",
+        "cssls",
       }
       for _, lsp in ipairs(lsp_server) do
         lspconfig[lsp].setup({
@@ -28,6 +28,16 @@ return {
         })
       end
       -- custom configs
+      lspconfig.yamlls.setup({
+        settings = {
+          yaml = {
+            customTags = {
+              "!vault",
+            },
+          },
+        },
+      })
+
       lspconfig.lua_ls.setup({
         settings = {
           Lua = {
