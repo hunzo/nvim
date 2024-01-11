@@ -34,7 +34,9 @@ return {
 			},
 
 			on_attach = function(client, bufnr)
-				print("on attach @none-ls")
+				-- check none-ls on_attach
+				-- print("on_attach @none-ls")
+
 				local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 				if client.supports_method("textDocument/formatting") then
 					vim.api.nvim_clear_autocmds({
