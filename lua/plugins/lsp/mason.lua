@@ -51,13 +51,14 @@ return {
 			ensure_installed = {
 				"autopep8",
 				"djlint",
+				"pylint",
 				"eslint_d",
 				"prettier",
 				"stylua",
 				"gofumpt",
 				"golines",
 				"goimports-reviser",
-				-- "isort",
+				"isort",
 				-- "black",
 			},
 		})

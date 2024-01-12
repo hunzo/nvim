@@ -25,17 +25,21 @@ return {
 				}),
 				-- null_ls.builtins.formatting.eslint_d,
 				null_ls.builtins.formatting.gofumpt,
-				-- null_ls.builtins.formatting.isort,
+				null_ls.builtins.formatting.isort,
+				-- null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.autopep8,
 				null_ls.builtins.formatting.goimports_reviser,
 				null_ls.builtins.formatting.golines,
 				-- Diagnostics
 				null_ls.builtins.diagnostics.eslint_d,
+				null_ls.builtins.diagnostics.pylint.with({
+					prefer_local = ".venv/bin",
+				}),
 			},
 
 			on_attach = function(client, bufnr)
 				-- check none-ls on_attach
-				-- print("on_attach @none-ls")
+				print("on_attach @none-ls")
 
 				local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 				if client.supports_method("textDocument/formatting") then
