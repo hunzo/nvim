@@ -39,7 +39,7 @@ keymap.set("n", "<C-w><down>", "<C-w>-", opts)
 
 -- diagnostics
 keymap.set("n", "<C-d>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
 
 -- lsp
@@ -49,5 +49,5 @@ keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 
 -- Neo-Tree
-keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal left<CR>", opts)
-keymap.set("n", "<leader>bf", ":Neotree toggle buffers reveal float<CR>", opts)
+keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", opts)
+-- keymap.set("n", "<leader>bf", ":Neotree toggle buffers reveal float<CR>", opts)

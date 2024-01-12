@@ -6,6 +6,8 @@ return {
 		"BufferLineBackground",
 		"BufferLineSeparator",
 		"BufferLineIndicatorSelected",
+		"NvimTreeNormalNC",
+		"NvimTreeNormal",
 	},
 	exclude_groups = {},
 }

@@ -59,6 +59,8 @@ return {
 				"golines",
 				"goimports-reviser",
 				"isort",
+				"mypy",
+				"ruff",
 				-- "black",
 			},
 		})
