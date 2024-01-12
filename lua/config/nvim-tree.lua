@@ -15,7 +15,7 @@ local options = {
 	view = {
 		adaptive_size = false,
 		side = "left",
-		width = 30,
+		width = 35,
 		preserve_window_proportions = true,
 	},
 	git = {
@@ -36,7 +36,15 @@ local options = {
 		highlight_opened_files = "none",
 
 		indent_markers = {
-			enable = false,
+			enable = true,
+			inline_arrows = true,
+			icons = {
+				corner = "└",
+				edge = "│",
+				item = "│",
+				bottom = "─",
+				none = " ",
+			},
 		},
 
 		icons = {
@@ -44,7 +52,7 @@ local options = {
 				file = true,
 				folder = true,
 				folder_arrow = true,
-				git = false,
+				git = true,
 			},
 
 			glyphs = {

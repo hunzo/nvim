@@ -59,8 +59,9 @@ return {
 				"golines",
 				"goimports-reviser",
 				"isort",
-				"mypy",
 				"ruff",
+				-- "golangcli_lint",
+				-- "mypy",
 				-- "black",
 			},
 		})

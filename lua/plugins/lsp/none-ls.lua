@@ -33,8 +33,9 @@ return {
 
 				-- Diagnostics
 				null_ls.builtins.diagnostics.eslint_d,
-				null_ls.builtins.diagnostics.mypy,
 				null_ls.builtins.diagnostics.ruff,
+				-- null_ls.builtins.diagnostics.golangci_lint,
+				-- null_ls.builtins.diagnostics.mypy,
 				-- null_ls.builtins.diagnostics.pylint.with({
 				-- 	prefer_local = "venv/bin",
 				-- }),
