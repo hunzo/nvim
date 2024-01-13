@@ -43,7 +43,7 @@ return {
 
 			on_attach = function(client, bufnr)
 				-- check none-ls on_attach
-				print("on_attach @none-ls")
+				-- print("on_attach @none-ls")
 
 				-- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
