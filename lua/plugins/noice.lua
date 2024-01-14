@@ -1,9 +1,10 @@
 return {
 	"folke/noice.nvim",
+	-- opts = {
+	-- 	background_colour = "#000000",
+	-- 	render = "compact",
+	-- },
 	event = "VeryLazy",
-	opts = {
-		-- background_colour = "#000000",
-	},
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 		"rcarriga/nvim-notify",
@@ -16,6 +17,7 @@ return {
 		require("notify").setup(vim.tbl_extend("keep", {
 			-- other stuff
 			background_colour = "#000000",
+			render = "wrapped-compact",
 		}, opts))
 	end,
 }
