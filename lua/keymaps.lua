@@ -3,10 +3,11 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 --- set termguicolor
-vim.cmd("set tgc")
+-- vim.cmd("set tgc")
 
 vim.g.mapleader = " "
 vim.g.transparent_enabled = true
+-- vim.g.neosolarized_contrast = "hight"
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
@@ -41,7 +42,7 @@ keymap.set("n", "<C-w><down>", "<C-w>-", opts)
 
 -- diagnostics
 keymap.set("n", "<C-d>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
 
 -- lsp
