@@ -28,13 +28,13 @@ return {
 				null_ls.builtins.formatting.yamlfmt,
 				null_ls.builtins.formatting.gofumpt,
 				null_ls.builtins.formatting.isort,
-				null_ls.builtins.formatting.autopep8,
+				-- null_ls.builtins.formatting.autopep8,
 				null_ls.builtins.formatting.goimports_reviser,
 				null_ls.builtins.formatting.golines,
 
 				-- Diagnostics
-				null_ls.builtins.diagnostics.eslint_d,
-				null_ls.builtins.diagnostics.ruff,
+				-- null_ls.builtins.diagnostics.eslint_d,
+				-- null_ls.builtins.diagnostics.ruff,
 				-- null_ls.builtins.diagnostics.golangci_lint,
 				-- null_ls.builtins.diagnostics.mypy,
 				-- null_ls.builtins.diagnostics.pylint.with({

@@ -36,7 +36,7 @@ return {
 				"html",
 				"lua_ls",
 				"yamlls",
-				-- "denols",
+				"denols",
 				"dockerls",
 				"bashls",
 				"jsonls",
