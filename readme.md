@@ -24,3 +24,9 @@ git clone https://github.com/hunzo/nvim ~/.config/nvim && nvim
 ```
 :checkheakth <plugin-name>
 ```
+
+## Update Treesitter
+
+```
+:TSUpdate
+```
