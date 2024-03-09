@@ -1,5 +1,8 @@
 return {
 	"nvimtools/none-ls.nvim",
+	dependencies = {
+		"nvimtools/none-ls-extras.nvim",
+	},
 	config = function()
 		local null_ls = require("null-ls")
 		local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -31,8 +34,11 @@ return {
 				-- null_ls.builtins.formatting.autopep8,
 				null_ls.builtins.formatting.goimports_reviser,
 				null_ls.builtins.formatting.golines,
+				require("none-ls.formatting.autopep8"),
 
 				-- Diagnostics
+				require("none-ls.diagnostics.ruff"),
+				require("none-ls.diagnostics.eslint_d"),
 				-- null_ls.builtins.diagnostics.eslint_d,
 				-- null_ls.builtins.diagnostics.ruff,
 				-- null_ls.builtins.diagnostics.golangci_lint,
@@ -40,6 +46,7 @@ return {
 				-- null_ls.builtins.diagnostics.pylint.with({
 				-- 	prefer_local = "venv/bin",
 				-- }),
+				-- https://github.com/nvimtools/none-ls.nvim/discussions/81
 			},
 
 			on_attach = function(client, bufnr)
