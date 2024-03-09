@@ -34,6 +34,7 @@ return {
 				-- null_ls.builtins.formatting.autopep8,
 				null_ls.builtins.formatting.goimports_reviser,
 				null_ls.builtins.formatting.golines,
+				null_ls.builtins.formatting.sql_formatter,
 				require("none-ls.formatting.autopep8"),
 
 				-- Diagnostics

@@ -20,6 +20,7 @@ return {
 				"bashls",
 				"jsonls",
 				"cssls",
+				"sqlls",
 			}
 			for _, lsp in ipairs(lsp_server) do
 				lspconfig[lsp].setup({

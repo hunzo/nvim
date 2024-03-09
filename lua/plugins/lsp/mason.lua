@@ -42,6 +42,7 @@ return {
 				"bashls",
 				"jsonls",
 				"cssls",
+				"sqlls",
 			},
 
 			-- -- auto-install configured servers (with lspconfig)
@@ -62,6 +63,7 @@ return {
 				"isort",
 				"ruff",
 				"yamlfmt",
+				"sql-formatter",
 				-- "golangcli_lint",
 				-- "mypy",
 				-- "black",
