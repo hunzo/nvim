@@ -60,7 +60,7 @@ return {
 				"gofumpt",
 				"golines",
 				"ruff",
-				"yamlfmt",
+				"yamlfix",
 				-- "sql-formatter",
 				"sqlfmt",
 				"golangci-lint",

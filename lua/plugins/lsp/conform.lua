@@ -12,7 +12,7 @@ return {
 				css = { "prettierd" },
 				json = { "prettierd" },
 				markdown = { "prettierd" },
-				yaml = { "yamlfmt" },
+				yaml = { "yamlfix" },
 				lua = { "stylua" },
 				python = { "autopep8" },
 				htmldjango = { "djlint" },
