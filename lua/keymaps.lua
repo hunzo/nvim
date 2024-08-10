@@ -2,6 +2,7 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set relativenumber")
 --- set termguicolor
 -- vim.cmd("set tgc")
 
@@ -11,6 +12,10 @@ vim.g.transparent_enabled = true
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
+
+-- keymap
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Navigate vim panes better
 keymap.set("n", "<c-k>", "<C-w>k", opts)
