@@ -16,7 +16,7 @@
 ### install
 
 ```bash
-git clone https://github.com/hunzo/xnvim ~/.config/nvim && nvim
+git clone https://github.com/hunzo/nvim ~/.config/nvim && nvim
 ```
 
 ## CheckHealth

@@ -5,8 +5,8 @@
 # - Python-venv
 # - Node Version Manager (nvm)
 
-GO_VERSION=go1.21.5
-NVIM_VERSION=v0.9.4
+GO_VERSION=go1.22.6
+NVIM_VERSION=v0.10.1
 NVM_VERSION=v0.39.7
 
 # -- install golang
@@ -47,6 +47,7 @@ sudo rm /usr/bin/nvim
 
 # -- add .bashrc
 sh -c "cat >> ~/.bashrc << EOF
+export EDITOR=nvim
 alias vim=nvim
 set -o vi
 EOF"

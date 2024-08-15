@@ -7,7 +7,7 @@ vim.cmd("set relativenumber")
 -- vim.cmd("set tgc")
 
 vim.g.mapleader = " "
-vim.g.transparent_enabled = true
+-- vim.g.transparent_enabled = true
 -- vim.g.neosolarized_contrast = "hight"
 
 local keymap = vim.keymap
@@ -57,5 +57,12 @@ keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 
 -- Neo-Tree
-keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", opts)
+-- keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", opts)
 -- keymap.set("n", "<leader>bf", ":Neotree toggle buffers reveal float<CR>", opts)
+keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal float<CR>", opts)
+
+-- Telescope
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
+keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
