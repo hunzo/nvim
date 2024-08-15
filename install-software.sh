@@ -7,7 +7,7 @@
 
 GO_VERSION=go1.22.6
 NVIM_VERSION=v0.10.1
-NVM_VERSION=v0.39.7
+NVM_VERSION=v0.40.0
 
 # -- install golang
 curl -OL https://golang.org/dl/$GO_VERSION.linux-amd64.tar.gz
