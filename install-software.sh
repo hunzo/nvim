@@ -35,6 +35,10 @@ show_git_branch() {
 export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
 EOF"
 
+# export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
+
+# export PS1="\[\e[31m\][\[\e[m\]\[\e[38;5;172m\]\u\[\e[m\]@\[\e[38;5;153m\]\h\[\e[m\]\[\e[38;5;214m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\[\e[91m\]\$(show_git_branch)\[\e[00m\]\\$ "
+
 # export PS1="\[\e[31m\][\[\e[m\]\[\e[38;5;172m\]\u\[\e[m\]@\[\e[38;5;153m\]\h\[\e[m\] \[\e[38;5;214m\]\W\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
 # -- clear old neovim
