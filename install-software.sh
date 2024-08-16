@@ -30,10 +30,16 @@ rm $GO_VERSION.linux-amd64.tar.gz
 # -- set shell .bashrc
 sh -c "cat >> ~/.bashrc << 'EOF'
 show_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
 EOF"
+
+# show_git_branch() {
+#     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1 /'
+# }
+# export PS1="\[\e[38;5;214m\]\w \[\e[91m\]\$(show_git_branch)\[\e[m\]\[\033[32m\]❱\[\e[m\] "
+
 
 # export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
 
