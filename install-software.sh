@@ -12,10 +12,10 @@ NVM_VERSION=v0.40.0
 # -- install golang
 curl -OL https://golang.org/dl/$GO_VERSION.linux-amd64.tar.gz
 
-mkdir ./.sdk
-mkdir ./.go
+mkdir ~/.sdk
+mkdir ~/.go
 
-tar xzvf $GO_VERSION.linux-amd64.tar.gz -C ./.sdk
+tar xzvf $GO_VERSION.linux-amd64.tar.gz -C ~/.sdk
 
 sh -c "cat >> ~/.bashrc << 'EOF'
 # golang setting
@@ -30,7 +30,7 @@ rm $GO_VERSION.linux-amd64.tar.gz
 # -- set shell .bashrc
 sh -c "cat >> ~/.bashrc << 'EOF'
 show_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1 /'
 }
 export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
 EOF"
@@ -38,14 +38,10 @@ EOF"
 # show_git_branch() {
 #     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1 /'
 # }
+
 # export PS1="\[\e[38;5;214m\]\w \[\e[91m\]\$(show_git_branch)\[\e[m\]\[\033[32m\]❱\[\e[m\] "
-
-
 # export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]\$(show_git_branch)\[\e[00m\]$ '
-
 # export PS1="\[\e[31m\][\[\e[m\]\[\e[38;5;172m\]\u\[\e[m\]@\[\e[38;5;153m\]\h\[\e[m\]\[\e[38;5;214m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\[\e[91m\]\$(show_git_branch)\[\e[00m\]\\$ "
-
-# export PS1="\[\e[31m\][\[\e[m\]\[\e[38;5;172m\]\u\[\e[m\]@\[\e[38;5;153m\]\h\[\e[m\] \[\e[38;5;214m\]\W\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
 # -- clear old neovim
 rm -rf ~/.config/nvim
@@ -54,7 +50,7 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
-sudo rm /usr/bin/nvim
+sudo rm -rf /usr/bin/nvim*
 
 
 # -- add .bashrc
@@ -81,7 +77,9 @@ sudo apt install build-essential -y
 
 # -- install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh | bash
+
 source ~/.nvm/nvm.sh
+
 source ~/.bashrc
 
 # -- install nodejs
