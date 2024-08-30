@@ -15,7 +15,7 @@ return {
 
 		-- enable mason and configure icons
 		mason.setup({
-			max_concurrent_installers = 8,
+			max_concurrent_installers = 15,
 			ui = {
 				border = "rounded",
 				icons = {
