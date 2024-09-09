@@ -1,6 +1,10 @@
 #!/bin/bash
 
 NEOVIM_VERSION=v0.10.1
+
+# clear neovim
+sudo rm -rf /usr/bin/nvim*
+
 curl -OL https://github.com/neovim/neovim/releases/download/$NEOVIM_VERSION/nvim-linux64.tar.gz
 
 sudo tar xzvf nvim-linux64.tar.gz -C /usr/bin/
