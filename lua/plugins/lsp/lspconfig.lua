@@ -4,7 +4,6 @@ return {
 		lazy = false,
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 			local lspconfig = require("lspconfig")
 			local lsp_server = {
 				"tailwindcss",
@@ -36,6 +35,7 @@ return {
 			-- 			experimentalPostfixCompletions = true,
 			-- 			completeUnimported = true,
 			-- 			usePlaceholders = true,
+			-- 			-- usePlaceholders = false,
 			-- 			analyses = {
 			-- 				unusedparams = true,
 			-- 				shadow = true,
