@@ -7,7 +7,7 @@ return {
 			local lspconfig = require("lspconfig")
 			local lsp_server = {
 				"tailwindcss",
-				"ts_ls",
+				"tsserver",
 				"gopls",
 				"pyright",
 				"emmet_ls",
