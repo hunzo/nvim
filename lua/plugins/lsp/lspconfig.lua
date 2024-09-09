@@ -30,21 +30,21 @@ return {
 				})
 			end
 			-- custom configs
-			lspconfig.gopls.setup({
-				settings = {
-					gopls = {
-						experimentalPostfixCompletions = true,
-						completeUnimported = true,
-						usePlaceholders = true,
-						analyses = {
-							unusedparams = true,
-							shadow = true,
-						},
-						staticcheck = true,
-						gofumpt = true,
-					},
-				},
-			})
+			-- lspconfig.gopls.setup({
+			-- 	settings = {
+			-- 		gopls = {
+			-- 			experimentalPostfixCompletions = true,
+			-- 			completeUnimported = true,
+			-- 			usePlaceholders = true,
+			-- 			analyses = {
+			-- 				unusedparams = true,
+			-- 				shadow = true,
+			-- 			},
+			-- 			staticcheck = true,
+			-- 			gofumpt = true,
+			-- 		},
+			-- 	},
+			-- })
 
 			lspconfig.yamlls.setup({
 				settings = {
