@@ -33,7 +33,7 @@ return {
 				"tailwindcss",
 				"tsserver",
 				"gopls",
-				"pyright",
+				"pyright@1.1.377",
 				"emmet_ls",
 				"html",
 				"lua_ls",
