@@ -43,7 +43,7 @@ return {
 				"bashls",
 				"jsonls",
 				"cssls",
-				"sqlls",
+				--"sqlls",
 				"ansiblels",
 			},
 

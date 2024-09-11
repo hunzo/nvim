@@ -19,7 +19,7 @@ return {
 				"bashls",
 				"jsonls",
 				"cssls",
-				"sqlls",
+				--"sqlls",
 				"ansiblels",
 			}
 			for _, lsp in ipairs(lsp_server) do
