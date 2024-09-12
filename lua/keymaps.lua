@@ -5,9 +5,9 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
 
 local opt = vim.opt
-opt.signcolumn = "yes"
-opt.number = true
-opt.shiftround = true
+-- opt.signcolumn = "yes"
+-- opt.number = true
+-- opt.shiftround = true
 --- set termguicolor
 -- vim.cmd("set tgc")
 if vim.fn.has("nvim-0.10") == 1 then
