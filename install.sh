@@ -84,8 +84,8 @@ source ~/.nvm/nvm.sh
 source ~/.bashrc
 
 # -- install nodejs
-# nvm install --lts
-nvm install 18.20.4
+nvm install --lts
+# nvm install 18.20.4
 
 # -- install ansible
 # sudo apt-add-repository ppa:ansible/ansible
