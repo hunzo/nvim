@@ -1,3 +1,3 @@
+require("core.lazy")
 require("keymaps")
 require("options")
-require("core.lazy")
