@@ -26,7 +26,7 @@ return {
 
 			local map = vim.keymap.set
 
-			local on_attach = function(_, bufnr)
+			local lsp_on_attach = function(_, bufnr)
 				local function opts(desc)
 					return { buffer = bufnr, desc = "LSP " .. desc }
 				end
@@ -51,7 +51,7 @@ return {
 			for _, lsp in ipairs(lsp_server) do
 				lspconfig[lsp].setup({
 					capabilities = capabilities,
-					on_attach = on_attach,
+					on_attach = lsp_on_attach,
 				})
 			end
 
