@@ -4,22 +4,6 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
 
-local opt = vim.opt
--- opt.signcolumn = "yes"
--- opt.number = true
--- opt.shiftround = true
---- set termguicolor
--- vim.cmd("set tgc")
-if vim.fn.has("nvim-0.10") == 1 then
-	opt.smoothscroll = true
-	opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
-	opt.foldmethod = "expr"
-	opt.foldtext = ""
-else
-	opt.foldmethod = "indent"
-	opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
-end
-
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 vim.g.mapleader = " "
