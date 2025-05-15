@@ -1,68 +1,68 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set relativenumber")
+-- =========================
+-- Global Settings
+-- =========================
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.relativenumber = true
+vim.wo.number = true
 
--- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 vim.g.mapleader = " "
--- vim.g.transparent_enabled = true
--- vim.g.neosolarized_contrast = "hight"
 
+-- =========================
+-- Keymaps
+-- =========================
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
--- keymap
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- Move lines up/down in visual mode
+keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
+keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
 
--- Navigate vim panes better
-keymap.set("n", "<c-k>", "<C-w>k", opts)
-keymap.set("n", "<c-j>", "<C-w>j", opts)
-keymap.set("n", "<c-h>", "<C-w>h", opts)
-keymap.set("n", "<c-l>", "<C-w>l", opts)
+-- Better window navigation
+keymap.set("n", "<C-h>", "<C-w>h", opts)
+keymap.set("n", "<C-j>", "<C-w>j", opts)
+keymap.set("n", "<C-k>", "<C-w>k", opts)
+keymap.set("n", "<C-l>", "<C-w>l", opts)
 
-keymap.set("n", "<leader>h", ":nohlsearch<CR>")
-vim.wo.number = true
+-- Clear search highlight
+keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "Clear search highlight" })
 
--- New tab
-keymap.set("n", "te", ":tabedit", opts)
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<S-tab>", ":tabprev<Return>", opts)
+-- Tabs
+keymap.set("n", "te", ":tabedit<CR>", { desc = "New tab" })
+keymap.set("n", "<Tab>", ":tabnext<CR>", opts)
+keymap.set("n", "<S-Tab>", ":tabprev<CR>", opts)
 
--- increment/decrement
-keymap.set("n", "+", "<C-a>")
-keymap.set("n", "-", "<C-x>")
+-- Increment/Decrement
+keymap.set("n", "+", "<C-a>", { desc = "Increment number" })
+keymap.set("n", "-", "<C-x>", { desc = "Decrement number" })
 
--- split window
-keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vsplit<Return>", opts)
+-- Split windows
+keymap.set("n", "ss", ":split<CR>", { desc = "Horizontal split" })
+keymap.set("n", "sv", ":vsplit<CR>", { desc = "Vertical split" })
 
--- resize windows
+-- Resize windows
 keymap.set("n", "<C-w><left>", "<C-w><", opts)
 keymap.set("n", "<C-w><right>", "<C-w>>", opts)
 keymap.set("n", "<C-w><up>", "<C-w>+", opts)
 keymap.set("n", "<C-w><down>", "<C-w>-", opts)
 
--- diagnostics
-keymap.set("n", "<C-d>", function()
-	vim.diagnostic.goto_next()
-end, opts)
+-- Diagnostics navigation
+keymap.set("n", "<C-d>", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 
--- lsp
-keymap.set("n", "K", vim.lsp.buf.hover, {})
-keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+-- LSP basic
+keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover doc" })
+keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "LSP: Go to definition" })
+keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "LSP: Show references" })
+keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP: Code action" })
 
--- Neo-Tree
--- keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", opts)
--- keymap.set("n", "<leader>bf", ":Neotree toggle buffers reveal float<CR>", opts)
-keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal float<CR>", opts)
+-- Neo-tree
+keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal float<CR>", { desc = "Toggle Neo-tree" })
 
 -- Telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find files in cwd" })
+keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Recent files" })
+keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", { desc = "Live grep in cwd" })
+keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Grep string under cursor" })

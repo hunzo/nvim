@@ -29,6 +29,8 @@ require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 		{ import = "plugins.lsp" },
+		-- { import = "plugins.lsp.conform" },
+		-- { import = "plugins.lsp.linting" },
 		{ import = "plugins.colorschemes" },
 	},
 	checker = {
