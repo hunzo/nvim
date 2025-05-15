@@ -1,5 +1,6 @@
 return {
 	"williamboman/mason.nvim",
+  version = "1.28.0", -- ✅ ป้องกันปัญหา automatic_enable
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
