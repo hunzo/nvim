@@ -42,7 +42,7 @@ return {
 				"cssls",
 				"ansiblels",
 			},
-			automatic_installation = true,
+			-- automatic_installation = true,
 		})
 
 		-- ========== Setup mason-tool-installer ==========
