@@ -8,7 +8,7 @@ return {
 
 		local servers = {
 			"tailwindcss",
-			"ts_ls",
+			-- "ts_ls",
 			-- "gopls",
 			"pyright",
 			"html",

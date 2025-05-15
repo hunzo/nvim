@@ -28,7 +28,7 @@ return {
 			ensure_installed = {
 				-- LSP Servers
 				"tailwindcss",
-				"ts_ls", -- ✅ แทน tsserver ที่ถูก deprecate แล้ว
+				-- "ts_ls", -- ✅ แทน tsserver ที่ถูก deprecate แล้ว
 				"gopls",
 				"pyright@1.1.377",
 				"emmet_ls",
@@ -42,7 +42,6 @@ return {
 				"cssls",
 				"ansiblels",
 			},
-      automatic_enable = true,
 			automatic_installation = true,
 		})
 
