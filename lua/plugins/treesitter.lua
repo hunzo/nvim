@@ -6,17 +6,21 @@ return {
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"lua",
+				"go",
+				"python",
+				"html",
+				"javascript",
 			},
+			modules = {},
 			auto_install = true,
+			ignore_install = {},
+			sync_install = false,
 			highlight = {
 				enable = true,
-				use_languagetree = true,
+				additional_vim_regex_highlighting = false,
 			},
 			indent = {
 				enable = true,
-				-- disable = {
-				-- 	"python",
-				-- },
 			},
 		})
 	end,
