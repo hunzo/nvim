@@ -1,9 +1,9 @@
 return {
-  "craftzdog/solarized-osaka.nvim",
-  lazy = false,
-  priority = 999,
-  config = function()
-    require("solarized-osaka").setup({
+	"craftzdog/solarized-osaka.nvim",
+	lazy = false,
+	priority = 999,
+	config = function()
+		require("solarized-osaka").setup({
 			transparent = false, -- Enable transparent background
 			terminal_colors = true, -- Use the same colors in Neovim terminal
 			styles = {
@@ -12,6 +12,6 @@ return {
 			},
 		})
 		vim.cmd.colorscheme("solarized-osaka")
-  end,
-  opts = {},
+	end,
+	opts = {},
 }
