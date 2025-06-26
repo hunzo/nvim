@@ -61,6 +61,7 @@ return {
 				"sqlfmt",
 				"yamlfmt",
 				"beautysh",
+				"nginx-config-formatter",
 
 				-- Linters
 				"ruff",

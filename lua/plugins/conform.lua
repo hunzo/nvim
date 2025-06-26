@@ -22,6 +22,7 @@ return {
 				-- sql = { "sql_formatter" },
 				sql = { "sqlfmt" },
 				sh = { "beautysh" },
+				nginx = { "nginxfmt" },
 			},
 			format_on_save = true,
 			async = false,
@@ -39,4 +40,3 @@ return {
 		end, { desc = "Format file or range (in vitual mode)" })
 	end,
 }
-
