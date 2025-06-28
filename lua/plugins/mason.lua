@@ -60,8 +60,9 @@ return {
 				"golines",
 				"sqlfmt",
 				"yamlfmt",
-				"beautysh",
+				"shfmt",
 				"nginx-config-formatter",
+				"goimports-reviser",
 
 				-- Linters
 				"ruff",
