@@ -21,6 +21,7 @@ return {
 				sql = { "sqlfmt" },
 				sh = { "shfmt" },
 				nginx = { "nginxfmt" },
+				dockerfile = { "yamlfmt" },
 			},
 			format_on_save = true,
 			async = false,

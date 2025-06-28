@@ -13,7 +13,7 @@ return {
 
 		-- ========== Setup mason ==========
 		mason.setup({
-			max_concurrent_installers = 8,
+			max_concurrent_installers = 16,
 			ui = {
 				border = "rounded",
 				icons = {
@@ -29,7 +29,7 @@ return {
 			ensure_installed = {
 				-- LSP Servers
 				"tailwindcss",
-				"ts_ls", -- ✅ แทน tsserver ที่ถูก deprecate แล้ว
+				"ts_ls",
 				"gopls",
 				"pyright@1.1.377",
 				"emmet_ls",
@@ -68,6 +68,7 @@ return {
 				"ruff",
 				"golangci-lint",
 				"ansible-lint",
+				"hadolint",
 			},
 		})
 	end,

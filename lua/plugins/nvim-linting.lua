@@ -6,10 +6,17 @@ return {
 
 		-- ตั้งค่าตาม filetype
 		lint.linters_by_ft = {
-			javascript = { "eslint_d" },
-			javascriptreact = { "eslint_d" },
-			typescript = { "eslint_d" },
-			typescriptreact = { "eslint_d" },
+			-- javascript = { "eslint_d" },
+			-- javascriptreact = { "eslint_d" },
+			-- typescript = { "eslint_d" },
+			-- typescriptreact = { "eslint_d" },
+
+			javascript = { "deno" },
+			javascriptreact = { "deno" },
+			typescript = { "deno" },
+			typescriptreact = { "deno" },
+			dockerfile = { "hadolint" },
+
 			python = { "ruff" },
 			go = { "golangcilint" },
 		}
