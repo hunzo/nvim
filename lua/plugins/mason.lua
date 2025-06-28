@@ -42,6 +42,7 @@ return {
 				"jsonls",
 				"cssls",
 				"ansiblels",
+				"docker_compose_language_service",
 			},
 			automatic_enable = true,
 			automatic_installation = true,
