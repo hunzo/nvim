@@ -10,7 +10,7 @@ return {
 			"tailwindcss",
 			"ts_ls",
 			"gopls",
-			"ruff",
+			"pyright",
 			"html",
 			"lua_ls",
 			"yamlls",
