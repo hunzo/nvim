@@ -14,7 +14,6 @@ return {
 			"html",
 			"lua_ls",
 			"yamlls",
-			"denols",
 			"dockerls",
 			"bashls",
 			"jsonls",
