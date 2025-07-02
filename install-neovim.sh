@@ -1,6 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
 
-NVIM_VERSION=v0.11.1
+NVIM_VERSION=v0.11.2
 NVIM_FILE_NAME=nvim-linux-x86_64
 
 echo "Installing Neovim $NVIM_VERSION ..."
