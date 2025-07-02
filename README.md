@@ -57,3 +57,9 @@ git clone https://github.com/hunzo/nvim ~/.config/nvim && nvim
   }
 }
 ```
+
+## install fonts in Ubuntu
+
+- mkdir -p /usr/share/fonts/nerdfonts
+- copy fonts to /usr/share/fonts/nerdfonts
+- exec sudo fc-cache -f -v
