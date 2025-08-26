@@ -62,6 +62,7 @@ return {
 				"shfmt",
 				"nginx-config-formatter",
 				"goimports-reviser",
+				"dprint",
 
 				-- Linters
 				"ruff",
