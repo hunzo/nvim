@@ -1,18 +1,3 @@
--- ================================================================================================
--- TITLE : nvim-cmp
--- ABOUT : A completion plugin written in lua.
--- LINKS :
---   > github                             : https://github.com/hrsh7th/nvim-cmp
---   > lspkind (dep)                      : https://github.com/onsails/lspkind.nvim
---   > cmp_luasnip (dep)                  : https://github.com/saadparwaiz1/cmp_luasnip
---   > luasnip (dep)                      : https://github.com/L3MON4D3/LuaSnip
---   > friendly-snippets (dep)            : https://github.com/rafamadriz/friendly-snippets
---   > cmp-nvim-lsp (dep)                 : https://github.com/hrsh7th/cmp-nvim-lsp
---   > cmp-buffer (dep)                   : https://github.com/hrsh7th/cmp-buffer
---   > cmp-path (dep)                     : https://github.com/hrsh7th/cmp-path
---   > cmp-nvim-lsp-signature-help (dep)  : https://github.com/hrsh7th/cmp-nvim-lsp-signature-help
--- ================================================================================================
-
 return {
 	"hrsh7th/nvim-cmp",
 	dependencies = {
