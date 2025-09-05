@@ -61,6 +61,5 @@ git clone https://github.com/hunzo/nvim ~/.config/nvim && nvim
 ## insatll ms font
 
 ```bash
-sudo apt install -y ttf-mscorefonts-installer
-sudo apt install -y fonts-roboto
+sudo apt install -y ttf-mscorefonts-installer fonts-noto fonts-noto-cjk
 ```
