@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo mkdir -p /usr/share/fonts/myfonts
-sudo cp -r ./fonts/* /usr/share/fonts/myfonts/
+sudo mkdir -p /usr/share/fonts/nvim-nerdfonts
+sudo cp -r ./fonts/* /usr/share/fonts/nvim-nerdfonts/
 sudo fc-cache -f -v
 
 # chekc font
