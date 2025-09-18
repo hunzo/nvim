@@ -1,17 +1,11 @@
+-- Or with configuration
 return {
-	"craftzdog/solarized-osaka.nvim",
-	lazy = false,
-	priority = 999,
+	"projekt0n/github-nvim-theme",
+	name = "github-theme",
+	lazy = false, -- make sure we load this during startup if it is your main colorscheme
+	priority = 1000, -- make sure to load this before all the other start plugins
 	config = function()
-		require("solarized-osaka").setup({
-			transparent = false, -- Enable transparent background
-			terminal_colors = true, -- Use the same colors in Neovim terminal
-			styles = {
-				sidebars = "transparent", -- Transparent background for sidebars
-				floats = "transparent", -- Transparent background for floating windows
-			},
-		})
-		vim.cmd.colorscheme("solarized-osaka")
+		require("github-theme").setup({})
+		vim.cmd("colorscheme github_dark_dimmed")
 	end,
-	opts = {},
 }
