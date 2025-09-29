@@ -58,7 +58,7 @@ git clone https://github.com/hunzo/nvim ~/.config/nvim && nvim
 - copy fonts to /usr/share/fonts/nerdfonts
 - exec sudo fc-cache -f -v
 
-## insatll ms font
+## install ms font
 
 ```bash
 sudo apt install -y ttf-mscorefonts-installer fonts-noto fonts-noto-cjk
