@@ -13,7 +13,7 @@ return {
 
 		-- ========== Setup mason ==========
 		mason.setup({
-			max_concurrent_installers = 16,
+			max_concurrent_installers = 4,
 			ui = {
 				border = "rounded",
 				icons = {
