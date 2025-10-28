@@ -6,6 +6,8 @@ return {
 	config = function()
 		require("nvim-treesitter.configs").setup({
 			-- language parsers that MUST be installed
+			modules = {},
+			ignore_install = {},
 			ensure_installed = {
 				"lua",
 				"go",
