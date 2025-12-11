@@ -20,6 +20,7 @@ return {
 				"cssls",
 				"ansiblels",
 				"docker_compose_language_service",
+				"terraformls",
 			},
 		},
 		dependencies = {
@@ -54,6 +55,7 @@ return {
 				"shfmt",
 				"nginx-config-formatter",
 				"goimports-reviser",
+				"terraform",
 
 				-- Linters
 				"ruff",
@@ -61,6 +63,7 @@ return {
 				"djlint",
 				"golangci-lint",
 				"ansible-lint",
+				"hadolint",
 				"hadolint",
 			},
 		},
