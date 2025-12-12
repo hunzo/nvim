@@ -6,6 +6,9 @@ g.markdown_recommended_style = 0
 -- Leader key
 g.mapleader = " "
 
+-- Disable cursor shape control (DECSCUSR)
+vim.opt.guicursor = ""
+
 -- AutoCMD
 -- indent setting
 vim.api.nvim_create_autocmd("FileType", {
